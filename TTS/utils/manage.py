@@ -341,11 +341,7 @@ class ModelManager(object):
             print(f" > {model_name} is already downloaded.")
         else:
             os.makedirs(output_path, exist_ok=True)
-            # handle TOS
-            if not self.tos_agreed(model_item, output_path):
-                if not self.ask_tos(output_path):
-                    os.rmdir(output_path)
-                    raise Exception(" [!] You must agree to the terms of service to use this model.")
+            # TOS Accepted!
             print(f" > Downloading model to {output_path}")
             try:
                 if "fairseq" in model_name:
