@@ -1,0 +1,10 @@
+# Configuration for Cog ⚙️
+
+build:
+  gpu: true
+  python_version: "3.11"
+
+  python_packages:
+    - "git+https://github.com/Sigil-Wen/TTS"
+
+predict: "predict.py:Predictor"
