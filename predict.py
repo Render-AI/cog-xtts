@@ -13,7 +13,7 @@ class Predictor(BasePredictor):
     def predict(
         self,
         text: str = Input(description="Text to synthesize"),
-        language: str = Input(description="Languaage"),
+        language: str = Input(description="Language"),
         speaker_wav: Path = Input(description="Original speaker audio")
     ) -> Path:
 
