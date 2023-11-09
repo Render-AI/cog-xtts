@@ -5,6 +5,6 @@ build:
   python_version: "3.11"
 
   python_packages:
-    - "git+https://github.com/Render-AI/TTS"
+    - "git+https://github.com/Sigil-Wen/TTS"
 
 predict: "predict.py:Predictor"
